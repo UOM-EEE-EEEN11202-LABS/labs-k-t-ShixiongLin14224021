@@ -14,24 +14,16 @@ int main(void) {
   // Lab L, Part 1, Step 3
   // Replace the following nested if statement with a single equivalent
   // expression using the conditional operator
-  if (a > b) {
-    r = p;
-  } else {
-    r = m;
-  }
+  r = a > b ? a : m;
   printf("r = %d\n", r);
 
   // Lab L, Part 1, Step 4
   // Replace the following nested if statement with a single equivalent
   // expression using the conditional operator
-  if (a < d) {
-    r = b;
-  } else if (b < c) {
-    r = p;
-  } else {
-    r = m;
-  }
+  
+  r = a < b ? b : (b < c ? p : m);
   printf("m = %d\n", m);
+
   // Write the code here, and test it with different values of a
 
   // Lab L, Part 1, Step 5
